@@ -1,5 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
 .max-w-md {
   max-width: 28rem;
   position: relative;
   top: 250px;
+}
+.dsC {
+  max-width: 1661px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.dsbright {
+  padding: 30px 30px;
+  max-width: 330px;
+  width: 100%;
+}
+.dsbrightN {
+  padding: 20px 0px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.dsbleft {
+  max-width: 1190px;
+  width: 100%;
+  padding: 30px 30px;
+}
+.dsbrightAdd, .dsbrightUp, .dsbrightDe, .dsbrightAllC, .dsbrightLiP, .dsbrightToO, .dsbrightCmO, .dsbrightCanO, .dsbrightCanoID, .dsbrightlogout {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
