@@ -1,6 +1,21 @@
-import React from "react";
+import React, {useEffect} from "react";
+import {getactions, postactions} from "../../Actions/actions"
+import {useDispatch, useSelector} from "react-redux"
 
 const Dashboard = () => {
+  const dispatch = useDispatch();
+  const {data, loading, error} = useSelector((state)=>state.dataState)
+
+  useEffect( ()=>{
+    dispatch(getactions());
+
+  },[dispatch])
+
+  useEffect(()=>{
+    console.log(data)
+  },[data])
+
+
   return (
     <>
       <div className="dsP">
