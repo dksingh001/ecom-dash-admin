@@ -3,7 +3,7 @@ import React from "react";
 const login = () => {
   return (
     <>
-      <form class="max-w-md mx-auto">
+      <form class="max-w-md mx-auto" id="lgf">
         <div class="relative z-0 w-full mb-5 group">
           <input
             type="email"
