@@ -4,28 +4,37 @@
   box-sizing: border-box;
 
 }
+#lgf {
+  /* background: black; */
+}
 
 .max-w-md {
+  height: 100vh;
   max-width: 28rem;
-  position: relative;
-  top: 250px;
+  /* height: 100vh; */
+  padding: 300px 0px;
+  /* position: relative; */
+  /* top: 250px; */
 }
 .dsC {
-  max-width: 1661px;
+  max-width: 1440px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: left; */
 }
 .dsbright {
-  padding: 30px 30px;
-  max-width: 330px;
+  padding: 10px 0px;
+  max-width: 250px;
   width: 100%;
+  height: 89.5vh;
+  background: #0D6CB8 /*rgb(46, 63, 80)*/;
 }
 .dsbrightN {
-  padding: 20px 20px;
+  padding: 10px 20px;
   font-size: 20px;
   font-family: sans-serif;
   font-weight: 500;
+  color: #fff;
 }
 .dsbleft {
   max-width: 1190px;
@@ -37,6 +46,9 @@
   justify-content: left;
   align-items: center;
   padding: 15px 0px;
+}
+.dsbrightAdd:hover, .dsbrightUp:hover, .dsbrightDe:hover, .dsbrightAllC:hover, .dsbrightLiP:hover, .dsbrightToO:hover, .dsbrightCanO:hover, .dsbrightCanoID:hover,  .dinesh:hover {
+  background-color: #338ed6;
 }
 .dsbrightlogout1{
   display: flex;
@@ -54,4 +66,51 @@
   font-size: 15px;
   font-weight: 400;
   font-family: sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.size-6 {
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1a2e8a; /* Adjust color to match the logo */
+}
+
+.icons {
+  /* display: flex;
+  gap: 15px; */
+  padding: 0px 30px;
+}
+
+.icon {
+  padding: 0px 20px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.mcA, .upCA, .accA {
+  display: flex;
 }
