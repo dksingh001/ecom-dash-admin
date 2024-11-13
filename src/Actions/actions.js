@@ -11,7 +11,7 @@ export const getactions = () => async(dispatch) => {
   }
 };
 
-export const postactions = (prop) => async(dispatch) => {
+export const AdminLogin = (prop) => async(dispatch) => {
     dispatch ({type: 'POST_DATA_REQUEST'});
 
     try {
