@@ -1,19 +1,33 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {getactions, postactions} from "../../Actions/actions"
 import {useDispatch, useSelector} from "react-redux"
+import { useNavigate } from "react-router-dom";
+
 
 const Dashboard = () => {
   const dispatch = useDispatch();
   const {data, loading, error} = useSelector((state)=>state.dataState)
+  const [adminName, setAdminname] = useState("Guest");
+  const navigate = useNavigate();
 
+ console.log(data)
   useEffect( ()=>{
     dispatch(getactions());
 
   },[dispatch])
 
-  useEffect(()=>{
-    console.log(data)
-  },[data])
+  // useEffect(()=>{
+  //   if (data?.userData) {
+  //     const AdminUser = data.userData.find((user) => user.role === "Admin")
+  //     navigate("/Addproduct")
+  //     if (AdminUser) {
+  //       setAdminname(AdminUser)
+  //     }
+  //   }else{
+  //     alert("Access Denied: Admin only")
+  //     navigate("/")
+  //   }
+  // },[data])
 
 
   return (
@@ -21,7 +35,7 @@ const Dashboard = () => {
       <div className="dsP">
         <div className="dsC">
           <div className="dsbright">
-            <div className="dsbrightN">Hi Dinesh Singh</div>
+            <div className="dsbrightN">Hi {adminName}</div>
             <div className="dsbrightDP">
             <div className="dsbrightDe">
                 <div className="dsbrightI">
