@@ -18,7 +18,7 @@ const Login = () => {
 
   const { data, loading, error } = useSelector((state) => state.dataState);
 
-  console.log(data);
+  // console.log(data);
   const handlechange = (e) => {
     const { name, value } = e.target;
     SetFrom((pre) => ({
@@ -45,7 +45,7 @@ const Login = () => {
   //     navigate("/Addproduct");
   //   }
   // }, [data, navigate]);
-
+  
   return (
     <>
       <form className="max-w-md mx-auto" id="lgf" onSubmit={handledata}>
