@@ -10,7 +10,7 @@ const Dashboard = () => {
   const [adminName, setAdminname] = useState(null);
   const navigate = useNavigate();
 
- console.log(data)
+//  console.log(data)
 
   // useEffect( ()=>{
   //   dispatch(getactions());

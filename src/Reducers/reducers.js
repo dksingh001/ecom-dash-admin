@@ -15,6 +15,7 @@ export const Reducers = (state = initialstate, action) => {
     case "POST_DATA_REQUEST":
       return { ...state, loading: true };
     case "POST_DATA_SUCCESS":
+      // console.log("Reducer store the token", action.payload.token)
       return {
         ...state,
         loading: false,

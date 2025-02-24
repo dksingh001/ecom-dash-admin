@@ -8,7 +8,7 @@ import Header from "./Components/pages/Header";
 import AllCustmer from "./Components/pages/AllCustmer";
 
 
-function App() {
+const App = () =>{
   return (
     <>
       <BrowserRouter>

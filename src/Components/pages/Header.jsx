@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import pic from "../../Assest/img/loo.png";
 import pic1 from "../../Assest/img/lo.png";
 
 const Header = () => {
+
+  const [showlogout, setShowlogout] = useState(false);
+
+  const handlelogout = () =>{
+      setShowlogout(!showlogout)
+  }
   return (
     <>
       <div>
@@ -11,7 +17,7 @@ const Header = () => {
             <img src={pic} alt="" className="icon" />
             <span className="logo-text">Resaclothing</span>
           </div>
-          <div className="icons">
+          <div className="icons" onClick={handlelogout}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -28,6 +34,7 @@ const Header = () => {
             </svg>
           </div>
         </div>
+          {showlogout && <button className="logout-btn">Logout</button>}
       </div>
     </>
   );

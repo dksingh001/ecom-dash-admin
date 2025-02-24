@@ -20,4 +20,4 @@ export const AdminLogin = (prop) => async(dispatch) => {
     } catch (error) {
       dispatch({ type: 'POST_DATA_FAILURE', payload : error.message})
     }
-  };
+};
