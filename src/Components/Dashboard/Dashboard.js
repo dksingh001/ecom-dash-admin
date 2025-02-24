@@ -7,27 +7,34 @@ import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const dispatch = useDispatch();
   const {data, loading, error} = useSelector((state)=>state.dataState)
-  const [adminName, setAdminname] = useState("Guest");
+  const [adminName, setAdminname] = useState(null);
   const navigate = useNavigate();
 
- console.log(data)
-  useEffect( ()=>{
-    dispatch(getactions());
+//  console.log(data)
 
-  },[dispatch])
+  // useEffect( ()=>{
+  //   dispatch(getactions());
+
+  // },[dispatch])
 
   // useEffect(()=>{
-  //   if (data?.userData) {
-  //     const AdminUser = data.userData.find((user) => user.role === "Admin")
+
+  //    console.log(data)
+
+  //   if (data?.userData && Array.isArray) {
+  //     const AdminUser = data.userData.find((prop) => prop.role === "Admin")
   //     navigate("/Addproduct")
   //     if (AdminUser) {
-  //       setAdminname(AdminUser)
-  //     }
-  //   }else{
-  //     alert("Access Denied: Admin only")
+  //       setAdminname(AdminUser.name)
+  //     }else{
+  //     alert("Access Denied: Admin only");
   //     navigate("/")
-  //   }
-  // },[data])
+  //   } 
+  // }else{
+  //   alert("Alert Denied: Invalid data");
+  //   navigate("/");
+  // }
+  // },[data, navigate])
 
 
   return (
