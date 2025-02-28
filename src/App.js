@@ -6,6 +6,8 @@ import AddP from "./Components/pages/AddP";
 import UpdateP from "./Components/pages/UpdateP";
 import Header from "./Components/pages/Header";
 import AllCustmer from "./Components/pages/AllCustmer";
+import PrivateRoute from "./Private/PrivateRoute";
+
 
 
 const App = () =>{
@@ -13,12 +15,16 @@ const App = () =>{
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+
+           <Route path="/" element={<Login />} />
+
+          <Route to={PrivateRoute}>  
           <Route path="/dashborad" element={<Dashboard />} />
           <Route path="/Addproduct" element={<AddP />} />
           <Route path="/updateProduct" element={<UpdateP />} />
           <Route path="/custmerslist" element={<AllCustmer />} />
           <Route path="/header" element={<Header />} /> 
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

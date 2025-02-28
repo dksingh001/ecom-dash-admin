@@ -32,10 +32,13 @@ const Login = () => {
    
     const { email, password } = from;
        // Dispatching the login action
-    dispatch(AdminLogin({ email, password }));
-
-    navigate("/addproduct")  
+    dispatch(AdminLogin({ email, password }));  
+    // navigate("/addproduct");
   };
+
+  // if (data) {
+  //   navigate("/addproduct")
+  // }
 
   // Redirect after successful login
   // useEffect(() => {
