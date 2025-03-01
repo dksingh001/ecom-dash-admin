@@ -8,8 +8,6 @@ import Header from "./Components/pages/Header";
 import AllCustmer from "./Components/pages/AllCustmer";
 import PrivateRoute from "./Private/PrivateRoute";
 
-
-
 const App = () =>{
   return (
     <>
