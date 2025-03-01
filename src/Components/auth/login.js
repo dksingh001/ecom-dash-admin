@@ -33,7 +33,7 @@ const Login = () => {
     const { email, password } = from;
        // Dispatching the login action
     dispatch(AdminLogin({ email, password }));  
-    // navigate("/addproduct");
+    navigate("/addproduct");
   };
 
   // if (data) {
